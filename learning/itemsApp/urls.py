@@ -1,5 +1,5 @@
 from django.urls import path
-from api_v1 import views
+from itemsApp import views
 
 urlpatterns = [
     path('get_data/', views.get_data),

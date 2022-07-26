@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from base.models import Item
-from api_v1.serializers import ItemSerializer
+from .serializers import ItemSerializer
 
 # Create your views here.
 
@@ -19,5 +19,3 @@ def add_data(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)
-
-
